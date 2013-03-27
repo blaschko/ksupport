@@ -11,6 +11,8 @@ it under the terms of the GNU General Public License as published by
 the Free Software Foundation; either version 3 of the License, or
 (at your option) any later version.
 
+Start with experiments.m - runs each type of loss with a k-support norm regularizer
+
 If you use this software in your research, please cite:
 
 M. B. Blaschko, A Note on k-support Norm Regularized Risk Minimization.
