@@ -1,4 +1,4 @@
-function [w,costs] = KsparseEpsReg(X,Y,lambda,k,eps,w0,h,iters_acc,eps_acc);
+function [w,costs] = ksupEpsilonInsensitive(X,Y,lambda,k,eps,w0,h,iters_acc,eps_acc);
 % Author: Matthew Blaschko - matthew.blaschko@inria.fr
 % Copyright (c) 2013
 %
