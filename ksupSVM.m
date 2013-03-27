@@ -20,25 +20,25 @@ function [w,costs] = ksupSVM(X,Y,lambda,k,w0,h, ...
 % Argyriou, A., Foygel, R., Srebro, N.: Sparse prediction with the k-support
 % norm. NIPS. pp. 1466-1474 (2012)
 
-    if(nargin<8)
+    if(~exist('eps_acc','var'))
         eps_acc = 1e-4;
     end
 
-    if(nargin<7)
+    if(~exist('iters_acc','var'))
         iters_acc = 2000; 
     end
     
-    if(nargin<6) % Huber parameter (see e.g. Olivier
+    if(~exist('h','var')) % Huber parameter (see e.g. Olivier
                  % Chapelle. Training a Support Vector Machine in
                  % the Primal, Neural Computation, 2007. Eq. (18))
         h = 0.1;
     end
     
-    if(nargin<5)
+    if(~exist('w0','var'))
         w0 = zeros(size(X,2),1);
     end
     
-    if(nargin<4)
+    if(~exist('k','var'))
         k = round(size(X,2)/4);
     end
            
