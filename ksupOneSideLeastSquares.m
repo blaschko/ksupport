@@ -51,7 +51,7 @@ end
 function l = squaredLoss(w,X,Y)
     Xw = X*w;
 
-    ind = find(1-Y.*Xw)>0;
+    ind = find(1-Y.*Xw>0);
     X = X(ind,:);
     Y = Y(ind,:);
 
@@ -63,7 +63,7 @@ end
 function g = gradSquaredLoss(w,X,Y)
     Xw = X*w;
 
-    ind = find(1-Y.*Xw)>0;
+    ind = find(1-Y.*Xw>0);
     X = X(ind,:);
     Y = Y(ind,:);
 
