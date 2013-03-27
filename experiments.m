@@ -16,7 +16,7 @@ function [accTab,mseTab,algNames] = experiments();
 % Argyriou, A., Foygel, R., Srebro, N.: Sparse prediction with the k-support
 % norm. NIPS. pp. 1466-1474 (2012)
 
-weights = randn(15,1)4; % random linear weighting of signal
+weights = randn(15,1)*4; % random linear weighting of signal
 
 blaschkoDisp('generating random data');
 [Xtrain,Ytrain] = gendata(50,weights);
