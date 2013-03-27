@@ -54,6 +54,8 @@ function l = squaredLoss(w,X,Y)
     ind = find(1-Y.*Xw)>0;
     X = X(ind,:);
     Y = Y(ind,:);
+
+    Xw = X*w;
     
     l = Xw'*Xw - 2*Xw'*Y + Y'*Y;
 end
