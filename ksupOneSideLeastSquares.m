@@ -65,6 +65,8 @@ function g = gradSquaredLoss(w,X,Y)
     X = X(ind,:);
     Y = Y(ind,:);
 
+    Xw = X*w;
+
     g = 2*X'*(X*w) - 2*X'*Y;
 end
 
