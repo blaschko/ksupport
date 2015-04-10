@@ -4,6 +4,11 @@ ksupport
 Code for the machine learning methods described in: M. B. Blaschko, A Note on k-support Norm Regularized Risk Minimization. arXiv:1303.6390, 2013.
 http://hal.inria.fr/hal-00804592
 
+Papers that have used this code include:
+Sidahmed, H., E. Prokofyeva, and M. B. Blaschko: Discovering Predictors of Mental Health Service Utilization with k-support Regularized Logistic Regression. Information Sciences, 2015.
+
+Belilovsky, E., K. Gkirtzou, M. Misyrlis, A. B. Konova, J. Honorio, N. Alia-Klein, R. Z. Goldstein, D. Samaras, and M. B. Blaschko: Predictive sparse modeling of fMRI data for improved classication, regression, and visualization using the k-support norm. Computerized Medical Imaging and Graphics, 2015.
+
 Author: Matthew Blaschko - matthew.blaschko@inria.fr
 Copyright (c) 2013
 
